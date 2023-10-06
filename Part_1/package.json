@@ -1,5 +1,4 @@
 {
-  "type": "module",
   "name": "part_1",
   "version": "1.0.0",
   "description": "Using NodeJS and ExpressJS write these APIs Use any library",

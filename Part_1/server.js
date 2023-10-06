@@ -1,12 +1,12 @@
-import express from 'express';
-import multer from 'multer';
-import { body, validationResult } from 'express-validator';
-import jwt from 'jsonwebtoken';
-import fs from 'fs/promises';
-import slugify from 'slugify';
-import imageSize from 'image-size';
-import sharp from 'sharp'
-import dotenv from 'dotenv'
+const express = require('express');
+const multer = require('multer');
+const { body, validationResult } = require('express-validator');
+const jwt = require('jsonwebtoken');
+const fs = require('fs').promises;
+const slugify = require('slugify');
+const imageSize = require('image-size');
+const sharp = require('sharp');
+const dotenv = require('dotenv');
 
 
 dotenv.config({ path: './.env' })
@@ -145,7 +145,6 @@ app.get('/api/getAllBlogPosts', async (req, res) => {
     // Return
     res.json(formattedBlogPosts);
   } catch (err) {
-    console.error(err);
     res.status(500).json({ error: 'Internal Server Error' });
   }
 });
@@ -181,3 +180,4 @@ app.get('/api/getImageByToken', (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
+module.exports = app;
