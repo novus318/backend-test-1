@@ -4,7 +4,7 @@
   "description": "Using NodeJS and ExpressJS write these APIs Use any library",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node init && node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
