@@ -17,5 +17,16 @@
     "description": "Description Test: 2!",
     "main_image": "images/main_image_2_test.jpg",
     "date_time": 1671017981
+  },
+  {
+    "reference": "00003",
+    "title": "Test3",
+    "description": "Description Test:3",
+    "main_image": "images/main.jpg",
+    "additional_images": [
+      "images/additional_additional1.jpg",
+      "images/additional_additional2.jpg"
+    ],
+    "date_time": "1698844800"
   }
 ]
